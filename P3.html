@@ -8,7 +8,7 @@
     <title>SoundCore - Produtos</title>
 </head>
 <style>
-     body {
+   body {
     background: url(fundo\ carbono\ png.jpg);
   }
  .cabTitulo {
@@ -20,6 +20,7 @@
     overflow: hidden;
     list-style-type: none;
     border: 3px solid #000;
+    color: #ffffff;
 }
  .logo {
     display: block;
@@ -124,9 +125,11 @@ a, input[type=text], .search-container button {
 }
 .palavras2 {
     margin-left: 90px;
-    font-size: 45px;
+    font-size: 35px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    background-color: #ffffff74;
+    border-radius: 2.5pc;
 }
 .conteudo {
     margin-right: auto;
@@ -158,30 +161,37 @@ a, input[type=text], .search-container button {
     background-image: linear-gradient(90deg, black, rgb(0, 0, 124));
 }
 .preço {
-  font-size: 60px;
+  font-size: 80px;
   background-color: #ffffff;
+  border-bottom-right-radius: 2pc;
+  border-bottom-left-radius: 2pc;
+  border: 2px solid #000
+
 }
 .comprar {
-  width: 50%;
+  width: 25%;
   background-color: rgb(4, 224, 4);
-  padding: 40px;
+  padding: 23px;
   cursor: pointer;
   font-size: 30px;
-  margin-right: 15pc;
   border: 3px solid #000;
+  margin-left: 5.5pc;
+  border-radius: 2pc;
 }
 .quantidade {
-  width: 10%;
+  width: 20%;
   padding: 20px;
   cursor: pointer;
   font-size: 30px;
-  margin-right: 5.5pc;
+  margin-left: 8pc;
   border: 3px solid #000;
+  border-radius: 2pc;
 }
-.palavraQuantidade {
-  margin-left: 49pc;
-  font-size: 35px;
-  font-family: 'Courier New', Courier, monospace;
+.estoque {
+  border: 2px solid #000
+}
+.imagemProduto {
+  border-radius: 2pc;
 }
 </style>
 <body>
@@ -201,34 +211,36 @@ a, input[type=text], .search-container button {
         <li><a href="login.html"><b>LOGIN</b></a></li>      
     </ul>
     <div class="cabTitulo">
-        <h1 class="tituloInicial">FAÇA SEU PEDIDO</h1>
+        <h1 class="tituloInicial" style="font-size: 90px;">FAÇA SEU PEDIDO</h1>
     </div>
     <div class="conteudo">
         <h5 class="palavras" style="background-color: #ffffff93;">REVISE SUA COMPRAR ANTES DE COMPRAR O PRODUTO!</h5>
         <div class="grid-container">
-          <div><img src="auto falante de para carro.png" style="width: 120%;"></div>
+          <div><img class="imagemProduto" src="auto falante de para carro.png" style="width: 115%;"></div>
           <br>
           <br>
           <br>
           <br>
           <br>
-          <div><h1 class="palavras2" style="background-color: #ffffff74;">
+          <div>
+            <h1 class="palavras2" style="border: 0.5pc solid #000;">
             <br>
-            Alto Falante para Carros Azul - Som Automotivo
+            Alto-Falante para Carros Azul - Som Automotivo 
             <br>
             <br>
-            <div style="background-color: #ddd;">Estoque: 1100</div>
+            <div class="estoque" style="background-color: #ddd;">Estoque Disponível: 1100</div>
             <div class="preço">R$ 105,00</div> 
           </h1>
+          <div>
         <button class="comprar">COMPRAR</button>
-        <input type="number" class="quantidade">
-        <div class="palavraQuantidade"><b>QUANTIDADE</b></div>
+        <input type="number" class="quantidade" placeholder="QUANT." required>
+        </div>
         </div>
         </div>
     </div>
     <div class="conteudo3">
-      <h5 class="palavras" style="color: #fff;">FALE COM UM DOS NOSSOS ATENDENTES! (55) 148926-9827</h5>
-      <h5 class="palavras" style="color: #fff;">ESTÁ TENDO PROBLEMAS TÉCNICOS? LIGE PRA NOSSA ASSISTÊNCIA TÉCNICA! (55) 146292-8623</h5>
+      <h5 class="palavras" style="color: #ffffff;">FALE COM UM DOS NOSSOS ATENDENTES! (55) 148926-9827</h5>
+      <h5 class="palavras" style="color: #ffffff;">SUPORTE TÉCNICO: 0800 013 2083</h5>
       <img src="SoundCore Logo.png" class="logo2">
     </div>
 </body>
